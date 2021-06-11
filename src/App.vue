@@ -3,7 +3,7 @@
   <div id="app">
     <Header />
      <router-view/>
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img alt="Vue logo" src="./assets/logo2.png" class="image is-128x128 is-rounded">
     <HelloWorld msg="Welcome to ALL COMBAT SPORTS"/>
   </div>
 </template>
