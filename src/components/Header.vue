@@ -3,7 +3,8 @@
   <div>
     <header class="header" >
      <div class="content has-text centered " >
-         <strong class="has-text-black is-size-2">ALL COMBAT SPORTS
+         <strong class="has-text-black is-size-2">
+           ALL COMBAT SPORTS
           </strong>
       <div class="content  centered ">
       <div class="field has-addons  ">
@@ -28,3 +29,4 @@
   </div>
   </section>
 </template>
+
