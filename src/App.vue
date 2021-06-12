@@ -1,5 +1,4 @@
 <template>
-
   <div id="app">
     <Header />
      <router-view/>
@@ -23,11 +22,13 @@ export default {
 
 <style>
 #app {
+  height: 100vh;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-image: "public/fondo.jpg"  ;
+  background-position: center center;
+  background-repeat:  no-repeat;
 }
 </style>
