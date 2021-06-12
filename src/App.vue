@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="has-bg-img">
     <Header />
      <router-view/>
     <img alt="Vue logo" src="./assets/logo2.png" class="image is-128x128 is-rounded">
@@ -27,8 +27,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-image: "public/fondo.jpg"  ;
-  background-position: center center;
-  background-repeat:  no-repeat;
 }
 </style>

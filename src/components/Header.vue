@@ -1,8 +1,8 @@
 <template >
 <section id="header" class="has-background-danger">
   <div>
-    <header class="header" >
-     <div class="content has-text centered " >
+    <header class="header " >
+     <div class="content has-text centered  " >
          <strong class="has-text-black is-size-2">
            ALL COMBAT SPORTS
           </strong>
