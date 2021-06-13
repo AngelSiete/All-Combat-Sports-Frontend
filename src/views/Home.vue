@@ -1,27 +1,36 @@
 <template>
   <div>
-    <fightCard v-for="lucha in luchas" :key="lucha._id" :value="lucha" />
+    <FightCard />
+    <!-- v-for="lucha in calendario" :key="lucha._id"  -->
   </div>
 </template>
 
 <script>
-import fightCard from "../components/partials/fightCard.vue"
+import FightCard from "../components/partials/fightCard.vue"
 export default {
   name:"Home",
   components: {
-    fightCard
+    FightCard
   },data(){
     return {
-      luchas: []
+      value: Object
     }
   },
-   async beforeMount() {
-    try {
-      this.luchas = await this.$api.luchas.list()
-    } catch (error) {
-      console.log(error);
-    }
-  },
+  //  async beforeMount() {
+  //   try {
+  //     calendario = await this.$api.calendario.list()
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // },
+  // async asyncData(context){
+  //   try{
+  //     const calendario = await context.app.$api.calendario.list();
+  //     return(calendario)
+  //   }catch(error){
+  //     console.error(error.message)
+  //   }
+  // }
 
 }
 </script>

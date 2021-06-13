@@ -1,20 +1,29 @@
 <template>
-  <div id="app" class="has-bg-img">
+  <div id="app" style="background-image: url(public/fondo.jpg);">
+
     <Header />
+
      <router-view/>
-    <img alt="Vue logo" src="./assets/logo2.png" class="image is-128x128 is-rounded">
-    <HelloWorld msg="Welcome to ALL COMBAT SPORTS"/>
+
+    <!-- <img alt="Vue logo" src="./assets/logo2.png" class="image is-128x128 is-rounded">
+    <HelloWorld msg="Welcome to ALL COMBAT SPORTS"/> -->
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+// import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
-// import {routes} from '@/router'
+// import {routes} from './router/index'
 export default {
-  name: 'App',
+  name: "App",
+  data(){
+    return {
+     
+    }
+  },
   components: {
-    HelloWorld,
+    // HelloWorld,
     Header
   }
 }
@@ -29,3 +38,5 @@ export default {
   text-align: center;
 }
 </style>
+
+
