@@ -2,7 +2,7 @@
   <div class="container my-2">
     <div class="box is-rounded has-background-white">
       <p class=" title is-5 has-text-black">{{value.FirstName +" " + value.LastName}}</p>
-      <p class=" title is-6 has-text-black"> {{value.Nickname}}</p>
+      <p class=" title is-6 has-text-danger is-italic "> {{value.Nickname}}</p>
       <p class=" title is-6 has-text-black"> {{value.WeightClass}}</p>
     </div>
   </div>

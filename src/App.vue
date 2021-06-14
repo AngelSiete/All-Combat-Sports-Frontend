@@ -5,7 +5,13 @@
 
      <router-view class= "has-background-black"/>
     
+    
+    
+    <div class="has-background-danger">
+    <p>All combat sports 1.0.0 © Todos los derechos reservados</p>
+    </div>
   </div>
+
 </template>
 
 <script>

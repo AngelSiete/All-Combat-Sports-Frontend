@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home'
 import Luchadores from '../views/Luchadores'
+import Luchador from "../views/Luchador"
 import Luchas from '../views/Luchas'
 import LuchasBox from '../views/LuchasBox'
 import LuchasMMA from '../views/LuchasMMA'
@@ -20,6 +21,10 @@ export const routes = [
     path: '/luchadores',
     name: 'Luchadores',
     component: Luchadores,
+  },{
+    path: '/luchador',
+    name: 'Luchador',
+    component: Luchador,
   },
   {
     path: '/luchas',
