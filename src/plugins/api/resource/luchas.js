@@ -4,12 +4,14 @@ class Luchas {
   }
 
   async list() {
-     
-          const response = await this.axios.get("/luchas/todos");
+    try{
+  const response = await this.axios.get("/luchas/todos");
+  return response.data.data}
 
-          return response.data
-     
-  }
+catch(error){
+    console.error(error.message)
+}
+}
 }
 
 export default Luchas

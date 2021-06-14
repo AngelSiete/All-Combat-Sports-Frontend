@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home'
 import Luchadores from '../views/Luchadores'
+import Luchas from '../views/Luchas'
 
 Vue.use(VueRouter)
 
@@ -17,6 +18,11 @@ export const routes = [
     path: '/luchadores',
     name: 'Luchadores',
     component: Luchadores,
+  },
+  {
+    path: '/luchas',
+    name: 'Luchas',
+    component: Luchas,
   }
 ]
 const router = new VueRouter({
