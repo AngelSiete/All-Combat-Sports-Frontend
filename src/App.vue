@@ -4,9 +4,7 @@
     <Header />
 
      <router-view/>
-
-    <!-- <img alt="Vue logo" src="./assets/logo2.png" class="image is-128x128 is-rounded">
-    <HelloWorld msg="Welcome to ALL COMBAT SPORTS"/> -->
+    
   </div>
 </template>
 
@@ -14,7 +12,8 @@
 
 // import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
-// import {routes} from './router/index'
+
+import {routes} from "./router/index"
 export default {
   name: "App",
   data(){
@@ -23,8 +22,9 @@ export default {
     }
   },
   components: {
-    // HelloWorld,
-    Header
+    
+    Header,
+   
   }
 }
 </script>
