@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home'
 import Luchadores from '../views/Luchadores'
 import Luchas from '../views/Luchas'
+import LuchasBox from '../views/LuchasBox'
+import LuchasMMA from '../views/LuchasMMA'
 
 Vue.use(VueRouter)
 
@@ -23,11 +25,21 @@ export const routes = [
     path: '/luchas',
     name: 'Luchas',
     component: Luchas,
+  },
+  {
+    path: '/luchasBox',
+    name: 'LuchasBox',
+    component: LuchasBox,
+  },
+  {
+    path: '/luchasMMA',
+    name: 'LuchasMMA',
+    component: LuchasMMA,
   }
 ]
 const router = new VueRouter({
   mode: 'history',
-  base: "http://localhost:8080/",
+  // base: "http://localhost:8080/",
   // base: process.env.BASE_URL,
   routes 
 })

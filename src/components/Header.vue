@@ -3,9 +3,11 @@
   <div>
     <header class="header " >
      <div class="content has-text centered  " >
-         <strong class="has-text-black is-size-2">
+           <router-link to="/">
+           <strong class="has-text-black is-size-2">
            ALL COMBAT SPORTS
           </strong>
+          </router-link>
       <div class="content level">
       <div class="field has-addons  ml-4 ">
           <div class="control pb-1 ">
@@ -18,25 +20,30 @@
     
     </div>
     <div class="control level-right  mr-4">
-            <button class="button is-focused is-black mx-1">Lista de Luchadores</button> 
-            <button class="button is-focused is-black mx-1">Lista de luchas</button> 
+            <button class="button is-focused is-black mx-1">
+              <router-link to="/luchadores">
+              Lista de Luchadores
+              </router-link>
+              </button> 
             
       <div class="button navbar-item has-dropdown is-hoverable is-black mx-1">
+        <router-link to="/luchas">
         <a class="navbar-link has-text-primary-light	">
-          Otros
+          Luchas (todas las modalidades)
         </a>
-
+        </router-link> 
         <div class="navbar-dropdown">
+          <router-link to="/luchasBox">
           <a class="navbar-item">
-            Sobre nosotros
+            Boxeo
           </a>
-          <a class="navbar-item">
-            Contáctanos
-          </a>
+           </router-link>
           <hr class="navbar-divider">
+          <router-link to="/luchasMMA">
           <a class="navbar-item">
-            Informar de un error
+            MMA
           </a>
+          </router-link>
         </div>
       </div>
             <button class="button is-focused is-black mx-1">Regístrate</button> 

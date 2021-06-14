@@ -1,5 +1,7 @@
 // import Auth from './resource/auth'
 import Luchas from './resource/luchas'
+import LuchasBox from "./resource/luchasBox"
+import LuchasMMA from "./resource/luchasMMA"
 import Calendario from "./resource/calendario"
 import Luchadores from "./resource/luchadores"
 import axios from 'axios'
@@ -10,6 +12,8 @@ export default {
       
       Vue.prototype.$api = {
              luchas: new Luchas(axios),
+             luchasBox: new LuchasBox(axios),
+             luchasMMA: new LuchasMMA(axios),
              calendario: new Calendario(axios),
              luchadores: new Luchadores(axios)
           // auth: new Auth(axios),
