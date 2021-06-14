@@ -1,9 +1,9 @@
 <template>
-  <div id="app" style="background-image: url(public/fondo.jpg);">
+  <div id="app" class= "has-background-black" style="background-image: url(public/fondo.jpg);">
 
-    <Header />
+    <Header  />
 
-     <router-view/>
+     <router-view class= "has-background-black"/>
     
   </div>
 </template>
