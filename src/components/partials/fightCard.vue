@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <div class="box is-rounded">
-      <p class=" title is-6">lorem vs ipsum</p>
-      <p class=" title is-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus expedita quia non? </p>
+      <p class=" title is-5">{{value.Name}}</p>
+      <p class=" title is-6">{{value.DateTime}}</p>
     </div>
   </div>
 

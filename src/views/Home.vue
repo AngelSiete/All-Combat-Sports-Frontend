@@ -1,6 +1,6 @@
 <template>
   <div>
-    <FightCard v-for="lucha in calendario" :key="lucha._id" />
+    <FightCard v-for="lucha in calendario" :key="lucha._id" :value="lucha"/>
      
   </div>
 </template>
@@ -13,24 +13,24 @@ export default {
     FightCard
   },data(){
     return {
-      value: Object
+      calendario:[]
     }
   },
-  //  async beforeMount() {
-  //   try {
-  //     calendario = await this.$api.calendario.list()
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // },
-  async asyncData(context){
-    try{
-      const calendario = await context.app.$api.calendario.list();
-      return(calendario)
-    }catch(error){
-      console.error(error.message)
+   async beforeMount() {
+    try {
+      this.calendario = await this.$api.calendario.list()
+    } catch (error) {
+      console.log(error);
     }
-  }
+  },
+  // async asyncData(context){
+  //   try{
+  //     const calendario = await context.app.$api.calendario.list();
+  //     return(calendario)
+  //   }catch(error){
+  //     console.error(error.message)
+  //   }
+  // }
 
 }
 </script>

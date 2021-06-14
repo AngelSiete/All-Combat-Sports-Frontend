@@ -4,8 +4,13 @@ class Calendario {
     }
   
     async list() {
+        try{
     const response = await this.axios.get("/calendario");
-    return response.data
+    return response.data.data}
+
+    catch(error){
+        console.error(error.message)
+    }
 }
 }
   
