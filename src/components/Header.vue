@@ -1,5 +1,5 @@
 <template >
-<section id="header" class="has-background-danger">
+<section id="header" class="is-red">
   <div>
     <header class="header " >
      <div class="content has-text centered  " >
@@ -60,4 +60,8 @@
   </div>
   </section>
 </template>
-
+<style>
+.is-red{
+  background-color: #E81F00;
+}
+</style>

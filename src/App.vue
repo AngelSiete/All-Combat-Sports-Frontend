@@ -7,8 +7,8 @@
     
     
     
-    <div class="has-background-danger">
-    <p>All combat sports 1.0.0 © Todos los derechos reservados</p>
+    <div class="is-red">
+    <strong> All combat sports 1.0.0 © Todos los derechos reservados</strong>
     </div>
   </div>
 
@@ -43,6 +43,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+.is-red{
+  background-color: #E81F00;
+}
+</style>
 </style>
 
 
