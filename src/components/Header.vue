@@ -11,12 +11,10 @@
       <div class="content level">
       <div class="field has-addons  ml-4 ">
           <div class="control pb-1 ">
-            <input class="input is-rounded" type="text" placeholder="Busca un luchador"> <div class="control">
-              <router-link to="/luchadores">
-            <a class="button is-black">
+            <input class="input is-rounded" type="text" placeholder="Busca un luchador" v-model="buscadorLuchador"> <div class="control">
+            <a :href="buscadorLuchador != '' ? '/luchador/' + buscadorLuchador : '#'" class="button is-black">
               Buscar
             </a>
-            </router-link>
     </div> 
     </div>
     
@@ -61,6 +59,17 @@
   </div>
   </section>
 </template>
+<script>
+export default {
+  name: "App",
+  data(){
+    return {
+     buscadorLuchador: ''
+    }
+  },
+}
+</script>
+
 <style>
 .is-red{
   background-color: #E81F00;

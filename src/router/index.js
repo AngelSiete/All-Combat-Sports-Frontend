@@ -22,9 +22,10 @@ export const routes = [
     name: 'Luchadores',
     component: Luchadores,
   },{
-    path: '/luchador',
+    path: '/luchador/:luchador_name',
     name: 'Luchador',
     component: Luchador,
+    props: true
   },
   {
     path: '/luchas',
