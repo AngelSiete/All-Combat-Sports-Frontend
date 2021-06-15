@@ -12,15 +12,17 @@
       <div class="field has-addons  ml-4 ">
           <div class="control pb-1 ">
             <input class="input is-rounded" type="text" placeholder="Busca un luchador"> <div class="control">
+              <router-link to="/luchadores">
             <a class="button is-black">
               Buscar
             </a>
+            </router-link>
     </div> 
     </div>
     
     </div>
     <div class="control level-right  mr-4">
-            <button class="button is-focused is-black mx-1">
+            <button class="button has-text-white is-focused is-black mx-1">
               <router-link to="/luchadores">
               Lista de Luchadores
               </router-link>
@@ -46,7 +48,6 @@
           </router-link>
         </div>
       </div>
-            <button class="button is-focused is-black mx-1">Regístrate</button> 
             <button class="button is-focused is-black mx-1">Inicia Sesión</button> 
     
     </div>

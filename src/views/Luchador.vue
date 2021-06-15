@@ -1,16 +1,18 @@
 <template>
   <div>
-    <FighterCard v-bind="luchador" :key="luchador._id" :value="luchador"/>
-     
+    <FighterCard  :value="luchador"/>
+     <FightCard />
   </div>
 </template>
 
 <script>
 import FighterCard from "../components/partials/fighterCard.vue"
+import FightCard from "../components/partials/fightCard.vue"
 export default {
   name:"Luchador",
   components: {
-    FighterCard
+    FighterCard,
+    FightCard
   },data(){
     return {
       luchador: Object
