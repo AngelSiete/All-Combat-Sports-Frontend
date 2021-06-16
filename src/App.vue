@@ -1,22 +1,15 @@
 <template>
   <div id="app" class= "has-background-black" >
-
     <Header/>
-
      <router-view class= "has-background-black"/>
-    
-    
-    
     <div  class="is-red">
     <strong > All combat sports 1.0.0 © Todos los derechos reservados</strong>
     </div>
   </div>
-
 </template>
 
 <script>
 
-// import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
 
 import {routes} from "./router/index"
