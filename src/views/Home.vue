@@ -23,14 +23,6 @@ export default {
       console.log(error);
     }
   },
-  // async asyncData(context){
-  //   try{
-  //     const calendario = await context.app.$api.calendario.list();
-  //     return(calendario)
-  //   }catch(error){
-  //     console.error(error.message)
-  //   }
-  // }
 
 }
 </script>
