@@ -1,11 +1,14 @@
 <template>
   <div>
     <FighterCard  :value="luchador.data.data[0]"/>
+    <div v-if="luchasMMA">
     <h1>Peleas MMA</h1>
-     <FightCard v-for="lucha in luchador.data.data[0].PeleasMMA" :key="lucha._id" :value="lucha"/>
-     <h1>Peleas PeleasBox</h1>
+     <FightCard  v-for="lucha in luchador.data.data[0].PeleasMMA" :key="lucha._id" :value="lucha"/>
+     </div>
+     <div v-if="luchasBOX">
+     <h1>Peleas Boxeo</h1>
      <FightCard v-for="lucha in luchador.data.data[0].PeleasBox" :key="lucha._id" :value="lucha"/>
-     
+     </div>
   </div>
 </template>
 
@@ -20,7 +23,7 @@ export default {
     FightCard
   },data(){
     return {
-      luchador: Object
+      luchador: Object,
     }
   },
    async beforeMount() {
@@ -31,7 +34,27 @@ export default {
       console.log(error);
     }
   },
-  
+  computed:{
+    luchasMMA(){
+      if (this.luchador.data.data[0].PeleasMMA != 0){
+        return true
+      }
+      else return false
+    },
+    luchasBOX(){
+      if (this.luchador.data.data[0].PeleasBox != 0){
+        return true
+      }
+      else return false
+    }
+  }
 
 }
 </script>
+<style>
+h1{
+  font-weight: bolder;
+  color: black;
+  background-color: #E81F00;
+}
+</style>

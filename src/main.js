@@ -4,7 +4,7 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import ACSApi from './plugins/api/index'
 import routes from "./router/index"
-axios.defaults.baseURL = "https://all-combat-sports.herokuapp.com/API"
+// axios.defaults.baseURL = "https://all-combat-sports.herokuapp.com/API"
 Vue.use(VueAxios, axios)
 
 Vue.use(ACSApi, {baseURL: "https://all-combat-sports.herokuapp.com/API"})

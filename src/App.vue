@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class= "has-background-black" style="background-image: url(public/fondo.jpg);">
+  <div id="app" class= "has-background-black" >
 
     <Header/>
 
@@ -7,8 +7,8 @@
     
     
     
-    <div class="is-red">
-    <strong> All combat sports 1.0.0 © Todos los derechos reservados</strong>
+    <div  class="is-red">
+    <strong > All combat sports 1.0.0 © Todos los derechos reservados</strong>
     </div>
   </div>
 
@@ -38,11 +38,13 @@ export default {
 <style>
 #app {
   height: 100vh;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
+  font-family: 'Barlow Condensed', sans-serif;
   text-align: center;
 }
+
 .is-red{
   background-color: #E81F00;
 }
