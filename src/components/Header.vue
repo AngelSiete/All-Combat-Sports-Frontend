@@ -8,16 +8,26 @@
            ALL COMBAT SPORTS
           </strong>
           </router-link>
-      <div class="content level">
-      <div class="field has-addons  ml-4 ">
-          <div class="control pb-1 ">
-            <input class="input is-rounded" type="text" placeholder="Busca un luchador" v-model="buscadorLuchador"> <div class="control">
+      <div class="field is-grouped my-4">
+      <div class="control  is-expanded  mx-2 my-4 ">
+          
+            <!-- <input class="input is-rounded" type="text" placeholder="Busca un luchador" v-model="buscadorLuchador"> <div class="control">
+            <a :href="buscadorLuchador != '' ? '/luchador/' + buscadorLuchador : '#'" class="button is-black">
+              Buscar
+            </a>
+    
+    </div> -->
+    <!--      -->
+    <div class="field is-grouped">
+  <p class="control is-expanded">
+    <input class="input is-rounded" type="text" placeholder="Busca un luchador" v-model="buscadorLuchador">
+   <div class="control">
             <a :href="buscadorLuchador != '' ? '/luchador/' + buscadorLuchador : '#'" class="button is-black">
               Buscar
             </a>
     </div> 
-    </div>
-    
+</div>
+     <!--  -->
     </div>
     <div class="control level-right  mr-4">
             <button class="button has-text-white is-focused is-black mx-1">
