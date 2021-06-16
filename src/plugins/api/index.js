@@ -19,8 +19,8 @@ export default {
              luchadores: new Luchadores(axios),
              luchador: new Luchador(axios)
           // auth: new Auth(axios),
-          // products: new Product(axios), 
-          // orders: new Order(axios)
+
+          
       }
   }
 }
