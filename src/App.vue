@@ -9,7 +9,6 @@
 </template>
 
 <script>
-
 import Header from './components/Header.vue'
 
 import {routes} from "./router/index"
